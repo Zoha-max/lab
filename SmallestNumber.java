@@ -1,20 +1,32 @@
 package lab;
 
-public class SmallestNumber {
-	 public static int findSmallest(int num1, int num2, int num3) {
-	        int smallest = num1;
-	        if (num2 < smallest) {
-	            smallest = num2;
-	        }
-	        if (num3 < smallest) {
-	            smallest = num3;
-	        }
-	        return smallest;
-	    }
-	    
-	    public static void main(String[] args) {
-	        int smallest = findSmallest(10, 5, 15);
-	        System.out.println("Smallest number is: " + smallest);
-	    }
+public class SmallestNumber 
+{
+	void show()    // creating method
+	{
+		int a = 10;
+		int b = 20;
+		int c = 30;
+		
+		if(a<=b && a<=c)
+		{
+		System.out.println( a + " is smaller.");
+		}
+	else if(b>=a && b>=c)
+		{
+		System.out.println( b  + " is smaller.");
+		}
+	else
+		{
+		System.out.println( c  + " is smaller." );
+		}
+		
+		
+	}
+	public static void main(String[] args)  // main method
+	{
+		SmallestNumber obj = new SmallestNumber(); //creating object of class
+		obj.show();  // calling method
+	}
 
 }
